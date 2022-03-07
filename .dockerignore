@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+
+certs
+
+selfsigned.key
+selfsigned.crt
+
+database.sqlite3
