@@ -132,7 +132,7 @@ app.get('/inject/:id', async (req, res) => {
                 withCredentials: true,
                 maxRedirects: 0,
                 validateStatus: function (status) {
-                    return status >= 200 && status < 500;
+                    return status >= 200 && status <= 500;
                   }
             })
             if (resp.status != answer.response.code || resp.data.length != answer.response.body.length) {
